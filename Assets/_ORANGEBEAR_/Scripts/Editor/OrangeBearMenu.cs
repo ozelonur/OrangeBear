@@ -5,7 +5,7 @@ namespace _ORANGEBEAR_.Scripts.Editor
 {
     public class OrangeBearMenu : MonoBehaviour
     {
-        [MenuItem("Orange Bear/Clear All Player Prefs")]
+        [MenuItem("Orange Bear/Clear All Player Prefs", priority = 0)]
         private static void ClearAllPlayerPrefs()
         {
             PlayerPrefs.DeleteAll();
