@@ -1,0 +1,113 @@
+﻿#region Header
+
+// Developed by Onur ÖZEL
+
+#endregion
+
+using _ORANGEBEAR_.EventSystem;
+using _ORANGEBEAR_.Scripts.Enums;
+using UnityEngine;
+using UnityEngine.UI;
+
+namespace _ORANGEBEAR_.Scripts.Bears
+{
+    public class UIBear : Bear
+    {
+        #region SerializeFields
+
+        #region Panels
+
+        [Header("Panels")] [SerializeField] private GameObject mainMenuPanel;
+        [SerializeField] private GameObject gamePanel;
+        [SerializeField] private GameObject gameFailPanel;
+        [SerializeField] private GameObject gameCompletePanel;
+
+        #endregion
+
+        #region Buttons
+
+        [Header("Buttons")] [SerializeField] private Button startButton;
+        [SerializeField] private Button retryButton;
+        [SerializeField] private Button nextButton;
+
+        #endregion
+
+        #endregion
+
+        #region MonoBehaviour Methods
+
+        private void Awake()
+        {
+            startButton.onClick.AddListener(StartGame);
+            retryButton.onClick.AddListener(NextLevel);
+            nextButton.onClick.AddListener(NextLevel);
+            
+            Activate(mainMenuPanel);
+        }
+
+        #endregion
+
+        #region Event Methods
+
+        private void OnEnable()
+        {
+            GameEvents<object[]>.ActivatePanel += ActivatePanel;
+        }
+
+        private void ActivatePanel(object[] obj)
+        {
+            PanelsEnums panel = (PanelsEnums) obj[0];
+
+            switch (panel)
+            {
+                case PanelsEnums.MainMenu:
+                    Activate(mainMenuPanel);
+                    break;
+                case PanelsEnums.Game:
+                    Activate(gamePanel);
+                    break;
+                case PanelsEnums.GameOver:
+                    Activate(gameFailPanel);
+                    break;
+                case PanelsEnums.GameWin:
+                    Activate(gameCompletePanel);
+                    break;
+                default:
+                    Debug.Log("Panel not found");
+                    break;
+            }
+        }
+
+        private void OnDisable()
+        {
+            GameEvents<object[]>.ActivatePanel -= ActivatePanel;
+        }
+
+        #endregion
+
+        #region Private Methods
+
+        private void NextLevel()
+        {
+            Roar(GameEvents<object[]>.NextLevel);
+        }
+
+        private void StartGame()
+        {
+            Roar(GameEvents<object[]>.OnGameStart);
+            Activate(gamePanel);
+        }
+
+        private void Activate(GameObject panel)
+        {
+            mainMenuPanel.SetActive(false);
+            gamePanel.SetActive(false);
+            gameFailPanel.SetActive(false);
+            gameCompletePanel.SetActive(false);
+
+            panel.SetActive(true);
+        }
+
+        #endregion
+    }
+}

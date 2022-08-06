@@ -14,8 +14,19 @@ namespace _ORANGEBEAR_.EventSystem
     /// <typeparam name="T"></typeparam>
     public class GameEvents<T>
     {
+        #region General Game Events
+
         public static Action<T> OnGameStart;
         public static Action<T> OnGameComplete;
         public static Action<T> GetLevelNumber;
+        public static Action<T> NextLevel;
+
+        #endregion
+
+        #region UI Events
+
+        public static Action<T> ActivatePanel;
+
+        #endregion
     }
 }

@@ -6,8 +6,8 @@
 
 namespace _ORANGEBEAR_.Scripts.GameVariables
 {
-    public class GameStrings
+    public static class GameStrings
     {
-        public static string LevelIndex = "LevelIndex";
+        public const string LevelIndex = "LevelIndex";
     }
 }
