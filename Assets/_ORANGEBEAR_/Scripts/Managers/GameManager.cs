@@ -6,6 +6,7 @@
 
 using _ORANGEBEAR_.EventSystem;
 using _ORANGEBEAR_.Scripts.Enums;
+using _ORANGEBEAR_.Scripts.GameVariables;
 using UnityEngine.SceneManagement;
 
 namespace _ORANGEBEAR_.Scripts.Managers
@@ -46,12 +47,12 @@ namespace _ORANGEBEAR_.Scripts.Managers
 
         private void NextLevel(object[] args)
         {
-            SceneManager.LoadScene("Main");
+            SceneManager.LoadScene(GameStrings.Main);
         }
 
         private void OnGameComplete(object[] obj)
         {
-            bool status = (bool) obj[0];
+            bool status = (bool)obj[0];
             Roar(GameEvents<object[]>.ActivatePanel,
                 status ? PanelsEnums.GameWin : PanelsEnums.GameOver);
         }

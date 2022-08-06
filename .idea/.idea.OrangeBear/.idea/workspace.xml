@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a2a36cfa-ab7e-452c-8e66-3b6a76de02a2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OrangeBear/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OrangeBear/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Bears/UIBear.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Bears/UIBear.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/GameVariables/GameStrings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/GameVariables/GameStrings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Bears/DebugInputBear.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Bears/DebugInputBear.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/EventSystem/GameEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/EventSystem/GameEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Managers/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Managers/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Managers/LevelManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +33,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "settings.editor.selected.configurable": "preferences.editor",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -80,7 +81,7 @@
       <workItem from="1659818525930" duration="5000" />
       <workItem from="1659818699104" duration="201000" />
       <workItem from="1659818968952" duration="53000" />
-      <workItem from="1659819045502" duration="477000" />
+      <workItem from="1659819045502" duration="1368000" />
     </task>
     <servers />
   </component>

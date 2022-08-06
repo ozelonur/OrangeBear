@@ -19,10 +19,6 @@ namespace _ORANGEBEAR_.Scripts.Bears
             {
                 Roar(GameEvents<object[]>.OnGameComplete, true);
             }
-
-            if (Input.GetKeyDown(KeyCode.Alpha0))
-            {
-            }
         }
 
         #endregion

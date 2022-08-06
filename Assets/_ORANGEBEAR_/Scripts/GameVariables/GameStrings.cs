@@ -10,5 +10,6 @@ namespace _ORANGEBEAR_.Scripts.GameVariables
     {
         public const string LevelIndex = "LevelIndex";
         public const string LevelCount = "LevelCount";
+        public const string Main = "Main";
     }
 }
