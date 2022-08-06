@@ -6,6 +6,7 @@
 
 using _ORANGEBEAR_.EventSystem;
 using _ORANGEBEAR_.Scripts.Enums;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -32,6 +33,12 @@ namespace _ORANGEBEAR_.Scripts.Bears
 
         #endregion
 
+        #region Texts
+
+        [Header("Texts")] [SerializeField] private TMP_Text scoreText;
+
+        #endregion
+
         #endregion
 
         #region MonoBehaviour Methods
@@ -41,7 +48,7 @@ namespace _ORANGEBEAR_.Scripts.Bears
             startButton.onClick.AddListener(StartGame);
             retryButton.onClick.AddListener(NextLevel);
             nextButton.onClick.AddListener(NextLevel);
-            
+
             Activate(mainMenuPanel);
         }
 
@@ -52,11 +59,19 @@ namespace _ORANGEBEAR_.Scripts.Bears
         private void OnEnable()
         {
             GameEvents<object[]>.ActivatePanel += ActivatePanel;
+            GameEvents<object[]>.GetLevelNumber += GetLevelNumber;
+        }
+
+
+        private void OnDisable()
+        {
+            GameEvents<object[]>.ActivatePanel -= ActivatePanel;
+            GameEvents<object[]>.GetLevelNumber -= GetLevelNumber;
         }
 
         private void ActivatePanel(object[] obj)
         {
-            PanelsEnums panel = (PanelsEnums) obj[0];
+            PanelsEnums panel = (PanelsEnums)obj[0];
 
             switch (panel)
             {
@@ -78,9 +93,10 @@ namespace _ORANGEBEAR_.Scripts.Bears
             }
         }
 
-        private void OnDisable()
+        private void GetLevelNumber(object[] obj)
         {
-            GameEvents<object[]>.ActivatePanel -= ActivatePanel;
+            int levelNumber = (int)obj[0];
+            scoreText.text = "Level " + levelNumber;
         }
 
         #endregion
