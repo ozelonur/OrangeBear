@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2a36cfa-ab7e-452c-8e66-3b6a76de02a2" name="Changes" comment="" />
+    <list default="true" id="a2a36cfa-ab7e-452c-8e66-3b6a76de02a2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OrangeBear/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OrangeBear/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Bears/DebugInputBear.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Bears/DebugInputBear.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Bears/UIBear.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Bears/UIBear.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/EventSystem/Bear.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/EventSystem/Bear.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/EventSystem/GameEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/EventSystem/GameEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Managers/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Managers/LevelManager.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,16 +30,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "preferences.editor",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.1f1\Editor\Unity.exe" />
@@ -76,6 +85,7 @@
       <workItem from="1659818699104" duration="201000" />
       <workItem from="1659818968952" duration="53000" />
       <workItem from="1659819045502" duration="2083000" />
+      <workItem from="1659906170979" duration="4270000" />
     </task>
     <servers />
   </component>

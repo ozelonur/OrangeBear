@@ -4,6 +4,7 @@
 
 #endregion
 
+using _GAME_.Scripts.Bears;
 using _ORANGEBEAR_.EventSystem;
 using _ORANGEBEAR_.Scripts.GameVariables;
 using _ORANGEBEAR_.Scripts.ScriptableObjects;
@@ -22,6 +23,7 @@ namespace _ORANGEBEAR_.Scripts.Managers
         #region Private Variables
 
         private Level _level;
+        private GameObject _tempLevel;
         private int _levelCount;
 
         private int LevelIndex
@@ -42,34 +44,38 @@ namespace _ORANGEBEAR_.Scripts.Managers
 
         private void Start()
         {
-            if (LevelIndex >= levels.Length)
-            {
-                LevelIndex = 1;
-                _level = levels[LevelIndex - 1];
-                Instantiate(_level.LevelPrefab);
-            }
-
-            else
-            {
-                _level = levels[LevelIndex - 1];
-                Instantiate(_level.LevelPrefab);
-            }
-
-            Roar(GameEvents<object[]>.GetLevelNumber, LevelCount);
+            CreateLevel();
         }
 
         #endregion
 
         #region Event Methods
 
-        private void OnEnable()
+        protected override void CheckRoarings(bool status)
         {
-            GameEvents<object[]>.OnGameComplete += OnGameComplete;
+            if (status)
+            {
+                Register(GameEvents.OnGameComplete, OnGameComplete);
+                Register(GameEvents.InitLevel, InitLevel);
+                Register(GameEvents.NextLevel, NextLevel);
+            }
+
+            else
+            {
+                UnRegister(GameEvents.OnGameComplete, OnGameComplete);
+                UnRegister(GameEvents.InitLevel, InitLevel);
+                UnRegister(GameEvents.NextLevel, NextLevel);
+            }
         }
 
-        private void OnDisable()
+        private void InitLevel(object[] args)
         {
-            GameEvents<object[]>.OnGameComplete -= OnGameComplete;
+            Roar(GameEvents.GetLevelNumber, LevelCount);
+        }
+
+        private void NextLevel(object[] args)
+        {
+            CreateLevel();
         }
 
         private void OnGameComplete(object[] obj)
@@ -80,6 +86,32 @@ namespace _ORANGEBEAR_.Scripts.Managers
 
             LevelCount++;
             LevelIndex++;
+        }
+
+        #endregion
+
+        #region Private Methods
+
+        private void CreateLevel()
+        {
+            if (_tempLevel != null)
+            {
+                Destroy(_tempLevel);
+            }
+
+            if (LevelIndex >= levels.Length)
+            {
+                LevelIndex = 1;
+            }
+
+            InstantiateLevel();
+        }
+
+        private void InstantiateLevel()
+        {
+            _level = levels[LevelIndex - 1];
+            _tempLevel = Instantiate(_level.LevelPrefab);
+            _tempLevel.GetComponent<GameLevelBear>().InitLevel();
         }
 
         #endregion
