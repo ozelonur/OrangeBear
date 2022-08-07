@@ -17,7 +17,7 @@ namespace _ORANGEBEAR_.Scripts.Bears
         {
             if (Input.GetKeyDown(KeyCode.Alpha9))
             {
-                Roar(GameEvents<object[]>.OnGameComplete, true);
+                Roar(GameEvents.OnGameComplete, true);
             }
         }
 

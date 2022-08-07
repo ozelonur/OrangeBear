@@ -6,8 +6,6 @@
 
 using _ORANGEBEAR_.EventSystem;
 using _ORANGEBEAR_.Scripts.Enums;
-using _ORANGEBEAR_.Scripts.GameVariables;
-using UnityEngine.SceneManagement;
 
 namespace _ORANGEBEAR_.Scripts.Managers
 {
@@ -29,32 +27,28 @@ namespace _ORANGEBEAR_.Scripts.Managers
             }
         }
 
-        private void OnEnable()
-        {
-            GameEvents<object[]>.NextLevel += NextLevel;
-            GameEvents<object[]>.OnGameComplete += OnGameComplete;
-        }
-
-        private void OnDisable()
-        {
-            GameEvents<object[]>.NextLevel -= NextLevel;
-            GameEvents<object[]>.OnGameComplete -= OnGameComplete;
-        }
-
         #endregion
 
         #region Event Methods
 
-        private void NextLevel(object[] args)
+        protected override void CheckRoarings(bool status)
         {
-            SceneManager.LoadScene(GameStrings.Main);
+            if (status)
+            {
+                Register(GameEvents.OnGameComplete, OnGameComplete);
+            }
+
+            else
+            {
+                UnRegister(GameEvents.OnGameComplete, OnGameComplete);
+            }
         }
 
         private void OnGameComplete(object[] obj)
         {
             bool status = (bool)obj[0];
-            Roar(GameEvents<object[]>.ActivatePanel,
-                status ? PanelsEnums.GameWin : PanelsEnums.GameOver);
+
+            Roar(GameEvents.ActivatePanel, status ? PanelsEnums.GameWin : PanelsEnums.GameOver);
         }
 
         #endregion

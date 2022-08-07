@@ -56,17 +56,26 @@ namespace _ORANGEBEAR_.Scripts.Bears
 
         #region Event Methods
 
-        private void OnEnable()
+        protected override void CheckRoarings(bool status)
         {
-            GameEvents<object[]>.ActivatePanel += ActivatePanel;
-            GameEvents<object[]>.GetLevelNumber += GetLevelNumber;
+            if (status)
+            {
+                Register(GameEvents.ActivatePanel, ActivatePanel);
+                Register(GameEvents.GetLevelNumber, GetLevelNumber);
+                Register(GameEvents.InitLevel, InitLevel);
+            }
+
+            else
+            {
+                UnRegister(GameEvents.ActivatePanel, ActivatePanel);
+                UnRegister(GameEvents.GetLevelNumber, GetLevelNumber);
+                UnRegister(GameEvents.InitLevel, InitLevel);
+            }
         }
 
-
-        private void OnDisable()
+        private void InitLevel(object[] args)
         {
-            GameEvents<object[]>.ActivatePanel -= ActivatePanel;
-            GameEvents<object[]>.GetLevelNumber -= GetLevelNumber;
+            Activate(mainMenuPanel);
         }
 
         private void ActivatePanel(object[] obj)
@@ -105,12 +114,11 @@ namespace _ORANGEBEAR_.Scripts.Bears
 
         private void NextLevel()
         {
-            Roar(GameEvents<object[]>.NextLevel);
+            Roar(GameEvents.NextLevel);
         }
 
         private void StartGame()
         {
-            Roar(GameEvents<object[]>.OnGameStart);
             Activate(gamePanel);
         }
 
