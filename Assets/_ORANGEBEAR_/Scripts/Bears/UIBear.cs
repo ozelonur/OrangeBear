@@ -6,6 +6,7 @@
 
 using _ORANGEBEAR_.EventSystem;
 using _ORANGEBEAR_.Scripts.Enums;
+using _ORANGEBEAR_.Scripts.Managers;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -38,18 +39,26 @@ namespace _ORANGEBEAR_.Scripts.Bears
         [Header("Texts")] [SerializeField] private TMP_Text scoreText;
 
         #endregion
+        
+        
 
         #endregion
 
         #region MonoBehaviour Methods
 
-        private void Awake()
+        protected virtual void Awake()
         {
             startButton.onClick.AddListener(StartGame);
-            retryButton.onClick.AddListener(NextLevel);
+            retryButton.onClick.AddListener(Restart);
             nextButton.onClick.AddListener(NextLevel);
-
+            
             Activate(mainMenuPanel);
+        }
+
+        private void Restart()
+        {
+            GameManager.Instance.isGameRestarted = true;
+            NextLevel();
         }
 
         #endregion
@@ -75,7 +84,16 @@ namespace _ORANGEBEAR_.Scripts.Bears
 
         private void InitLevel(object[] args)
         {
-            Activate(mainMenuPanel);
+            if (!GameManager.Instance.isGameRestarted)
+            {
+                Activate(mainMenuPanel);
+            }
+
+            else
+            {
+                GameManager.Instance.isGameRestarted = false;
+                StartGame();
+            }
         }
 
         private void ActivatePanel(object[] obj)
@@ -102,10 +120,10 @@ namespace _ORANGEBEAR_.Scripts.Bears
             }
         }
 
-        private void GetLevelNumber(object[] obj)
+        protected virtual void GetLevelNumber(object[] obj)
         {
             int levelNumber = (int)obj[0];
-            scoreText.text = "Level " + levelNumber;
+            scoreText.text = "LEVEL " + levelNumber;
         }
 
         #endregion
@@ -114,12 +132,14 @@ namespace _ORANGEBEAR_.Scripts.Bears
 
         private void NextLevel()
         {
+            scoreText.transform.parent.gameObject.SetActive(true);
             Roar(GameEvents.NextLevel);
         }
 
-        private void StartGame()
+        protected void StartGame()
         {
             Activate(gamePanel);
+            Roar(GameEvents.OnGameStart);
         }
 
         private void Activate(GameObject panel)
