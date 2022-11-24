@@ -1246,6 +1246,7 @@ GameObject:
   - component: {fileID: 1594743929}
   - component: {fileID: 1594743928}
   - component: {fileID: 1594743931}
+  - component: {fileID: 1594743933}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -1265,6 +1266,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8737dea710fc4d58a6fa5f112cc22e4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confetti: {fileID: 0}
+  isGameStarted: 0
+  isGameRestarted: 0
+  isGameEnded: 0
 --- !u!114 &1594743929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1318,6 +1323,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 733c5bd3c4ca415cb2873a34bc8f6396, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1594743933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594743927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c4fddaed40848e2b53164a1e7fc6c56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1602835497
 GameObject:
   m_ObjectHideFlags: 0
@@ -1348,6 +1365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
