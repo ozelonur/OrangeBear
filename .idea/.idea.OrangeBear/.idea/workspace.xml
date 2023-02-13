@@ -3,7 +3,95 @@
   <component name="ChangeListManager">
     <list default="true" id="a2a36cfa-ab7e-452c-8e66-3b6a76de02a2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OrangeBear/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OrangeBear/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Levels.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Levels.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Levels/Level 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Levels/Level 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Levels/Level 1.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Levels/Level 1.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Levels/Template Level.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Levels/Template Level/TemplateLevel.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Levels/Template Level/TemplateLevel.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Levels/Template Level/TemplateLevel.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Levels/Template Level/TemplateLevel.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Levels/_Level 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Levels/_Level 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Prefabs/Cube.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Prefabs/Cube.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Prefabs/Level.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Prefabs/Level.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Bears.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Bears.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Bears/GameLevelBear.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Bears/GameLevelBear.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Bears/GameLevelBear.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Bears/GameLevelBear.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Bears/GameUIBear.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Bears/GameUIBear.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Bears/GameUIBear.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Bears/GameUIBear.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Entities.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Entities/MoneyData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Entities/MoneyData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/GlobalVariables.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/GlobalVariables/CustomEvents.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/GlobalVariables/CustomEvents.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Level.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Level.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Manager.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Manager/MoneyManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Manager/MoneyManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Animations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Animations/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Animations/UI/ButtonIdle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Animations/UI/ButtonIdle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Animations/UI/OpenButton.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Animations/UI/OpenButton.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Animators.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Animators/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Animators/UI/ButtonAnimation.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Animators/UI/ButtonAnimation.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Bears.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Bears/DebugInputBear.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Bears/DebugInputBear.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Bears/LevelBear.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Bears/LevelBear.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Bears/UIBear.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Bears/UIBear.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Editor/LevelCreator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Editor/LevelCreator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Editor/OrangeBearMenu.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Editor/OrangeBearMenu.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Entity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Entity/Entity.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Entity/Entity.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Enums.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Enums/PanelsEnums.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Enums/PanelsEnums.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/EventSystem.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/EventSystem/Bear.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/EventSystem/Bear.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/EventSystem/GameEvents.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/EventSystem/GameEvents.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/EventSystem/Roaring.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/EventSystem/Roaring.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/GameVariables.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/GameVariables/GameStrings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/GameVariables/GameStrings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Helpers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Helpers/FPS.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Helpers/FPS.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Managers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Managers/BearManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Managers/BearManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Managers/GameManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Managers/GameManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Managers/LevelManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/Managers/LevelManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/ScriptableObjects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/ScriptableObjects/Level.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Scripts/ScriptableObjects/Level.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Sprites/Button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ORANGEBEAR_/Sprites/Button.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,19 +112,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/onurozel/Library/Application Support/JetBrains/Rider2022.3/resharper-host/DecompilerCache",
+      "/Users/onurozel/Library/Application Support/JetBrains/Rider2022.3/resharper-host/SourcesCache",
+      "/Users/onurozel/.local/share/Symbols/src"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.7f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;$PROJECT_DIR$&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -81,6 +184,7 @@
       <workItem from="1659819045502" duration="2083000" />
       <workItem from="1659906170979" duration="4270000" />
       <workItem from="1669310904108" duration="2530000" />
+      <workItem from="1676311714850" duration="650000" />
     </task>
     <servers />
   </component>

@@ -1,13 +1,12 @@
-﻿#region Header
-// Developed by Onur ÖZEL
-#endregion
+using OrangeBear.Core;
 
-using _ORANGEBEAR_.Scripts.Bears;
-
-namespace _GAME_.Scripts.Bears
+namespace OrangeBear.Bears
 {
     public class GameLevelBear : LevelBear
     {
-        
+        public override void InitLevel()
+        {
+            base.InitLevel();
+        }
     }
 }
